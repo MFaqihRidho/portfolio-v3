@@ -1,7 +1,3 @@
-<script>
-	import NavItem from '../Nav/NavItem.svelte';
-</script>
-
 <nav
 	class="w-full flex items-center border-t justify-between border-border-primary divide-x divide-border-primary"
 >

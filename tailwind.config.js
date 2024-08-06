@@ -8,6 +8,7 @@ export default {
 				border: { primary: '#1E2D3D', active: '#FEA55F' },
 				text: {
 					primary: '#607B96',
+					secondary: '#E5E9F0',
 					active: '#FFFFFF'
 				}
 			}
