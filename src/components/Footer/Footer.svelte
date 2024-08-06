@@ -10,7 +10,7 @@
 			><i class="ri-instagram-line text-2xl"></i></a
 		>
 		<a
-			href="https://www.instagram.com/mfaqihridho/"
+			href="https://www.linkedin.com/in/muhammad-faqih-ridho/"
 			target="_blank"
 			class="text-text-primary hover:text-text-active px-4 py-2"
 			><i class="ri-linkedin-fill text-2xl"></i></a
@@ -20,7 +20,7 @@
 		href="https://github.com/MFaqihRidho"
 		target="_blank"
 		class="text-text-primary hover:text-text-active flex items-center gap-1 px-4 py-2"
-		><p>@MFaqihRidho</p>
+		><p class="md:block hidden">@MFaqihRidho</p>
 		<i class="ri-github-fill text-xl"></i></a
 	>
 </nav>

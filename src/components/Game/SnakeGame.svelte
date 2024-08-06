@@ -199,7 +199,7 @@
 	}
 </script>
 
-<div class="flex gap-5">
+<div class="flex md:flex-row flex-col items-center gap-5">
 	<div class="canvasContainer relative">
 		<canvas id="canvas" width={canvasSize} height={canvasHeight}></canvas>
 		{#if gameState === GAME.OVER || gameState === GAME.READY}
@@ -225,13 +225,53 @@
 		{/if}
 	</div>
 
-	<div>
-		<div>
-			Score: {bodyPositions.length !== 3 ? (score > 0 ? score : '0') : '0'}
+	<div class="w-full">
+		<div class="bg-[#011423]/20 flex flex-col gap-2 p-3 rounded-lg w-full">
+			<div>
+				<p class="text-text-active text-sm">// use keyboard</p>
+				<p class="text-text-active text-sm">// arrows to play</p>
+			</div>
+			<div class="grid grid-cols-3 gap-1">
+				<div></div>
+				<button
+					type="button"
+					on:click={() => changeDirection(DIRECTION.UP)}
+					class="bg-bg-primary rounded-lg flex items-center justify-center"
+				>
+					<i class="ri-arrow-drop-up-fill text-white text-2xl"></i>
+				</button>
+				<div></div>
+				<button
+					on:click={() => changeDirection(DIRECTION.LEFT)}
+					type="button"
+					class="bg-bg-primary rounded-lg flex items-center justify-center"
+				>
+					<i class="ri-arrow-drop-left-fill text-white text-2xl"></i>
+				</button>
+				<button
+					on:click={() => changeDirection(DIRECTION.DOWN)}
+					type="button"
+					class="bg-bg-primary rounded-lg flex items-center justify-center"
+				>
+					<i class="ri-arrow-drop-down-fill text-white text-2xl"></i>
+				</button>
+				<button
+					on:click={() => changeDirection(DIRECTION.RIGHT)}
+					type="button"
+					class="bg-bg-primary rounded-lg flex items-center justify-center"
+				>
+					<i class="ri-arrow-drop-right-fill text-white text-2xl"></i>
+				</button>
+			</div>
 		</div>
+		<div class="mt-3">
+			<p class="text-text-active text-sm">
+				// score: {bodyPositions.length !== 3 ? (score > 0 ? score : '0') : '0'}
+			</p>
 
-		<div>
-			High score: {highScore}
+			<p class="text-text-active text-sm">
+				// highest score: {highScore}
+			</p>
 		</div>
 	</div>
 </div>
