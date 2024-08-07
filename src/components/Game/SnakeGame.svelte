@@ -199,7 +199,7 @@
 	}
 </script>
 
-<div class="flex md:flex-row flex-col items-center gap-5">
+<div class="flex lg:flex-row flex-col lg:items-start items-center gap-5">
 	<div class="canvasContainer relative">
 		<canvas id="canvas" width={canvasSize} height={canvasHeight}></canvas>
 		{#if gameState === GAME.OVER || gameState === GAME.READY}
@@ -228,8 +228,8 @@
 	<div class="w-full">
 		<div class="bg-[#011423]/20 flex flex-col gap-2 p-3 rounded-lg w-full">
 			<div>
-				<p class="text-text-active text-sm">// use keyboard</p>
-				<p class="text-text-active text-sm">// arrows to play</p>
+				<p class="text-text-active text-sm">// use keyboard arrows</p>
+				<p class="text-text-active text-sm">// or this arrows to play</p>
 			</div>
 			<div class="grid grid-cols-3 gap-1">
 				<div></div>
