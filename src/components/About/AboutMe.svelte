@@ -21,7 +21,7 @@
 			{/each}
 		</div>
 		<textarea
-			class="min-w-[500px] h-full bg-transparent text-text-primary flex-1 resize-none"
+			class="min-w-[500px] h-full bg-transparent text-text-primary lg:block hidden flex-1 resize-none"
 			value={aboutMe}
 			disabled
 		></textarea>

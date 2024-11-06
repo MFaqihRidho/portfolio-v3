@@ -4,7 +4,7 @@
 
 <div class="flex flex-col gap-2">
 	<p class="text-text-primary">// Work experience</p>
-	<div class="flex flex-wrap gap-5">
+	<div class="flex lg:flex-row flex-col flex-wrap gap-5">
 		<Card
 			title="Frontend Engineer"
 			descrription="Orderfaz"

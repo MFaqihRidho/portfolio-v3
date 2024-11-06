@@ -5,7 +5,9 @@
 	let isExpand = false;
 </script>
 
-<div class="h-screen w-screen bg-bg-secondary px-3 py-5 md:p-16 flex flex-col">
+<div
+	class="md:h-screen h-full w-screen overflow-x-hidden bg-bg-secondary px-3 py-5 md:p-16 flex flex-col"
+>
 	<div
 		class="w-full h-full rounded-lg border-border-primary border flex justify-between flex-col bg-bg-primary flex-1"
 	>
