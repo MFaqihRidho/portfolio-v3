@@ -7,20 +7,22 @@
 	<div class="flex lg:flex-row flex-col flex-wrap gap-5">
 		<Card
 			title="Frontend Engineer"
-			descrription="Orderfaz"
+			description="Orderfaz"
+			image="/orderfaz.webp"
 			additionalDescription="Jul2023 - Present"
 			skills={['next', 'vue']}
 		/>
 		<Card
 			title="Junior Frontend Engineer"
-			descrription="Orderfaz"
+			description="Orderfaz"
+			image="/orderfaz.webp"
 			additionalDescription="Jul2022 - Jul2023"
 			skills={['vue']}
 		/>
 		<Card
 			title="Frontend Developer Intern"
-			descrription="KMPlus"
-			image="https://learningcenter.pmli.co.id/files/partner/500/1664953315_633d2be35a545.png"
+			description="KMPlus"
+			image="/kmplus.webp"
 			additionalDescription="Apr2022 - Jul2022"
 			skills={['react']}
 		/>

@@ -6,6 +6,7 @@
 	import Accordion from 'components/Accordion/Accordion.svelte';
 	import AboutMe from 'components/About/AboutMe.svelte';
 	import Experience from 'components/About/Experience.svelte';
+	import Interest from 'components/About/Interest.svelte';
 
 	let activeTab = $page.url.hash === '#interest' ? 'interest' : 'bio';
 </script>
@@ -58,8 +59,12 @@
 		<div class="flex-grow flex lg:max-w-[700px] flex-col py-2 pl-5">
 			<AboutMe />
 		</div>
+	{:else}
+		<div class="px-5 py-3 w-full lg:w-max lg:overflow-y-auto max-h-full">
+			<Interest />
+		</div>
 	{/if}
-	<div class="px-5 py-3 w-full lg:w-max lg:overflow-y-auto max-h-fit">
+	<div class="px-5 py-3 w-full lg:w-max lg:overflow-y-auto max-h-full">
 		<Experience />
 	</div>
 </div>

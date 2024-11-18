@@ -1,15 +1,18 @@
 <script lang="ts">
 	export let title: string = 'Project 1';
-	export let descrription: string = 'ui_animation';
+	export let description: string = 'ui_animation';
 	export let additionalDescription: string = '';
 	export let skills: Array<String> = ['react'];
 	export let image: string = 'https://blog.orderfaz.com/blog/content/images/2023/06/orderfaz-1.png';
+	export let explanation: string = 'Duis aute irure dolor in velit esse cillum dolore.';
 </script>
 
 <div class="w-full max-w-96">
 	<p>
 		<span class="text-text-highlight font-bold">{title}</span>
-		<span class="text-text-primary">// {descrription}</span>
+		{#if additionalDescription}
+			<span class="text-text-primary">// {description}</span>
+		{/if}
 	</p>
 	{#if additionalDescription}
 		<p class="text-[#43D9AD]">{additionalDescription}</p>
@@ -31,7 +34,7 @@
 			{/if}
 		</div>
 		<div class="p-5 border-t border-border-primary text-text-primary">
-			<p>Duis aute irure dolor in velit esse cillum dolore.</p>
+			<p>{explanation}</p>
 		</div>
 	</div>
 </div>
