@@ -6,10 +6,17 @@
 	<p class="text-text-primary">// Work experience</p>
 	<div class="flex lg:flex-row flex-col flex-wrap gap-5">
 		<Card
+			title="Lead Frontend Engineer"
+			description="Orderfaz"
+			image="/orderfaz.webp"
+			additionalDescription="Jul2024 - Now"
+			skills={['next', 'vue']}
+		/>
+		<Card
 			title="Frontend Engineer"
 			description="Orderfaz"
 			image="/orderfaz.webp"
-			additionalDescription="Jul2023 - Present"
+			additionalDescription="Jul2023 - Jul2024"
 			skills={['next', 'vue']}
 		/>
 		<Card

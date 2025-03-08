@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let aboutMe = `/**
 * About me
 * Hi there! I'm a passionate and highly motivated
@@ -7,7 +7,7 @@
 * use. Imagine a shop online where sellers can
 * easily manage their products and customers –
 * that's the kind of user experience I strive to
-* create. I have 2 years of expereince in Frontend
+* create. I have 3 years of expereince in Frontend
 * Development and i'm skilled in using the latest
 * development tools like Vue.js and Next.js.
 */`;
@@ -19,7 +19,7 @@ and applications that are easy and enjoyable to
 use. Imagine a shop online where sellers can
 easily manage their products and customers –
 that's the kind of user experience I strive to
-create. I have 2 years of expereince in Frontend
+create. I have 3 years of expereince in Frontend
 Development and i'm skilled in using the latest
 development tools like Vue.js and Next.js.
 /`;

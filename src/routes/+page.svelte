@@ -1,5 +1,6 @@
 <script>
 	import SnakeGame from 'components/Game/SnakeGame.svelte';
+	import Typewriter from 'svelte-typewriter';
 </script>
 
 <div
@@ -10,7 +11,9 @@
 		<div class="flex flex-col gap-1 md:!py-0 pb-5">
 			<p class="text-text-secondary text-lg">Hi all. I am</p>
 			<p class="text-text-secondary text-6xl">M.Faqih Ridho</p>
-			<p class="text-[#4D5BCE] text-xl md:text-3xl">> Front-end engineer</p>
+			<Typewriter scrambleDuration={1000} mode="scramble">
+				<p class="text-[#4D5BCE] text-xl md:text-3xl">> Front-end engineer</p>
+			</Typewriter>
 		</div>
 		<div class="flex flex-col gap-1 overflow-hidden">
 			<p class="text-text-primary">// you can also see me as a streamer</p>

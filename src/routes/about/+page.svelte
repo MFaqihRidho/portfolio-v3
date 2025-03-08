@@ -14,7 +14,7 @@
 <div
 	class="h-full flex lg:flex-row flex-col overflow-y-auto lg:overflow-hidden divide-border-primary divide-x w-full flex-1"
 >
-	<div class="lg:w-72 w-full h-max flex flex-col md:gap-0 gap-1">
+	<div class="md:min-w-64 md:max-w-64 w-full h-max flex flex-col md:gap-0 gap-1">
 		<Accordion label="personal-info">
 			<div
 				transition:slide={{ duration: 300, easing: quintOut, axis: 'y' }}
