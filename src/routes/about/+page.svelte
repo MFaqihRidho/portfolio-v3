@@ -1,15 +1,20 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import Accordion from 'components/Accordion/Accordion.svelte';
+	import AboutMe from 'components/About/AboutMe.svelte';
+	import Experience from 'components/About/Experience.svelte';
+	import Interest from 'components/About/Interest.svelte';
 
 	let activeTab = $page.url.hash === '#interest' ? 'interest' : 'bio';
 </script>
 
-<div class="h-full flex divide-border-primary divide-x w-full flex-1">
-	<div class="w-72 h-max">
+<div
+	class="h-full flex lg:flex-row flex-col overflow-y-auto lg:overflow-hidden divide-border-primary divide-x w-full flex-1"
+>
+	<div class="md:min-w-64 md:max-w-64 w-full h-max flex flex-col md:gap-0 gap-1">
 		<Accordion label="personal-info">
 			<div
 				transition:slide={{ duration: 300, easing: quintOut, axis: 'y' }}
@@ -49,5 +54,17 @@
 			</div>
 		</Accordion>
 	</div>
-	<div></div>
+
+	{#if activeTab === 'bio'}
+		<div class="flex-grow flex lg:max-w-[700px] flex-col py-2 pl-5">
+			<AboutMe />
+		</div>
+	{:else}
+		<div class="px-5 py-3 w-full lg:w-max lg:overflow-y-auto max-h-full">
+			<Interest />
+		</div>
+	{/if}
+	<div class="px-5 py-3 w-full lg:w-max lg:overflow-y-auto max-h-full">
+		<Experience />
+	</div>
 </div>

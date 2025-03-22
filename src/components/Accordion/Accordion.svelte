@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	export let label;
 	let isExpand = true;
 
@@ -10,7 +10,7 @@
 <button
 	on:click={handleToggle}
 	type="button"
-	class={`h-11 border-border-primary ${isExpand ? 'text-text-active' : '!text-text-primary'} hover:text-text-active flex w-full border-b items-center gap-1 px-3`}
+	class={`h-11 md:bg-transparent bg-border-primary border-border-primary ${isExpand ? 'text-text-active' : '!text-text-primary'} hover:text-text-active flex w-full border-b items-center gap-1 px-3`}
 >
 	<i
 		class={`${isExpand ? 'rotate-90' : ''} ri-arrow-right-s-fill text-xl transition-transform duration-100`}

@@ -9,7 +9,8 @@ export default {
 				text: {
 					primary: '#607B96',
 					secondary: '#E5E9F0',
-					active: '#FFFFFF'
+					active: '#FFFFFF',
+					highlight : '#5565E8'
 				}
 			}
 		}

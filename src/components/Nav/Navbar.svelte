@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
@@ -27,9 +27,6 @@
 		<div class="text-text-primary lg:w-72 px-8 py-3.5">m.faqih-ridho</div>
 		<NavItem path="/" label="_hello" />
 		<NavItem path="/about" label="_about-me" />
-		<NavItem path="/project" label="_projects" />
-	</div>
-	<div class="hidden lg:flex">
 		<NavItem path="/contact" label="_contact-me" />
 	</div>
 </nav>
